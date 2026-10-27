@@ -6,6 +6,8 @@ import PublicacionesPage from './pages/PublicacionesPage';
 // 10: Importar obtenerSesion desde './services/sesion'.
 import { obtenerSesion } from './services/sesion';
 
+import RegistroPage from './pages/RegistroPage';
+
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -50,6 +52,7 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonRouterOutlet>
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/registro" element={<RegistroPage />} />
         <Route
           path="/publicaciones"
           element={
